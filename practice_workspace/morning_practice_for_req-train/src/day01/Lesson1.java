@@ -13,14 +13,18 @@
 1.6
 こんにちは
 true
- * 
+ *
  */
 package day01;
 
 public class Lesson1 {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		System.out.println("出力します");
+		System.out.println(12);
+		System.out.println(1.6);
+		System.out.println("こんにちは");
+//		printlnを使って「出力します」を代入する
 
 	}
 
