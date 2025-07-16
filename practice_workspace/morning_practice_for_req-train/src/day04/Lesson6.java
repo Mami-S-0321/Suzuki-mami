@@ -4,7 +4,7 @@
 クラス名 Lesson6.java
 
 以下の手順に沿ってコンソールに表示を行いなさい
- 
+
  ・String型配列を定義し"鈴木" "田中" "佐藤"を代入します
  ・for文を用い、配列から上記の文字列を取り出し、","を加えた上で一つの文字列変数に代入します。
  ・ただし、最後の要素の後には","をつけないでください。
@@ -20,8 +20,43 @@ package day04;
 public class Lesson6 {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		String[] names = {"鈴木" , "田中" , "佐藤"};
+		for(String name : names) {
+			System.out.print(name);
+		}
+		int nm = Integer.parseInt(names);
+		System.out.println("カンマ区切りで配列を出力します");
+		   
+
 
 	}
 
 }
+
+
+
+/*答え
+  String[] names = { "鈴木", "田中", "佐藤" };
+
+String mergeString = "";
+
+for (int i = 0; i < names.length; i++) {
+	mergeString += names[i];
+
+	// 配列の最終要素-1までカンマを加えます
+	if (i < names.length - 1) {
+		mergeString += ",";
+	}
+
+	// 以下のようにbreakで抜けてもOKです
+	//			if (i == names.length - 1) {
+	//				break;
+	//			}
+	//			mergeString += ",";
+
+}
+System.out.println("カンマ区切りで配列の要素を出力します");
+System.out.println(mergeString);
+
+
+*/

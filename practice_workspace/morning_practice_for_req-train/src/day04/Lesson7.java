@@ -45,3 +45,50 @@ public class Lesson7 {
 
 	}
 }
+
+
+
+/*答え
+ * import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Lesson7_answer {
+
+	public static void main(String[] args) throws IOException {
+
+		int ansNum = 7;// 解答の数値
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		boolean isCorrected = false;// ループ処理の判定変数。
+
+		System.out.println("数当てゲームです。");
+		System.out.println("1-10の整数を入力して下さい");
+		while (!isCorrected) {
+
+			System.out.print("\ninput number?[1-10] >>");
+			int input = Integer.parseInt(br.readLine());
+
+			// 範囲外の数値が入力された場合
+			if (input < 1 || 10 < input) {
+				System.out.println("error:1-10の整数を入力してください");
+				continue;
+			}
+
+			// 答えの数値が入力された場合
+			if (input == ansNum) {
+				System.out.println("正解！");
+				isCorrected = true;
+				break;
+			} // elseブロックで分岐処理させてもかまいません
+
+			System.out.println("残念、はずれです。。。もう一回！");
+
+		}
+
+		System.out.println("\nゲームを終了します");
+
+	}
+}
+ */
