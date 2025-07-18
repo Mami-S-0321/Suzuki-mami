@@ -29,16 +29,25 @@
 //税抜き価格：\56789
 //税込み価格：\62467
 
-package day05.q01;
+package day05.q1.anser;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
-		CashRegister cash = new CashRegister();
 
+		System.out.println("商品の税込み金額（消費税10％）を計算します。\n税抜き金額を入力してください。");
+		System.out.print("input money? >>");
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int cost = Integer.parseInt(br.readLine());
+		System.out.println("税抜き価格：\\" + cost);
 
+		CashRegister cashRegister = new CashRegister();// レジオブジェクトの生成
+		int priceIncludeTax = cashRegister.calcPrice(cost);// メソッドを呼び出し、戻り値を変数に代入
+		System.out.println("税込み価格：\\" + priceIncludeTax);
 
 	}
 
