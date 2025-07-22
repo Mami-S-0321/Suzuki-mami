@@ -1,4 +1,4 @@
-//追加問題 
+//追加問題
 
 //パッケージ名 day6.q2
 //クラス名1 Depositor.java 預金者クラス
@@ -15,22 +15,22 @@
 //		- name:String
 //		- money:int
 //	・メソッド
-//		+ showData():戻り値の型 void 
+//		+ showData():戻り値の型 void
 //			・預金者情報としてフィールドの内容を表示します
 //		+ 各フィールドのsetter,getter(ソースタブの機能を用いて定義する)
 //【Bankクラス】
 //	・フィールド
 //		- bankCode:String 初期値:"000111"
 //		- bankName:int 初期値:"シェアード銀行"
-//		- depositor:Depositor 
+//		- depositor:Depositor
 //	・メソッド
-//		+ showData():戻り値の型 void 
+//		+ showData():戻り値の型 void
 //			・銀行情報としてbankCode,bankNameフィールドの内容を表示します
 //			・depositorのshowData()を呼び出します
 //		+ depositorのsetter,getter(ソースタブの機能を用いて定義する)
 //【Mainクラス】
 //	・メソッド
-//		+ main(args:String[]):戻り値の型 void 
+//		+ main(args:String[]):戻り値の型 void
 //			・コンソールから名前と預金額を入力します
 //			・Depositorオブジェクトを生成します
 //			・Depositorオブジェクトに名前と預金額をsetします
@@ -54,12 +54,34 @@
 
 package day06.q02;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class Main {
 
 	public static void main(String[] args) throws IOException {
-		/*ここから記入*/
+		Bank bank = new Bank();
+		Depositor depositor = new Depositor();
+
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		String name = reader.readLine();
+		String money = reader.readLine();
+
+		 depositor.setName(name);
+		 int inmoney = Integer.parseInt(money);
+		 depositor.setMoney(inmoney);
+
+		System.out.println("預金者情報を登録します。");
+		System.out.println("input name? >>" + name );
+		System.out.println("input money? >>" + money );
+		System.out.println("銀行に預金者情報を登録します。");
+
+
+
+
+
+
 
 	}
 

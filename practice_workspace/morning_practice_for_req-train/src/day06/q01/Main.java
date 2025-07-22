@@ -1,4 +1,4 @@
-//問題 
+//問題
 
 //パッケージ名 day6.q1
 //クラス名1 Phone.java 電話クラス
@@ -12,16 +12,16 @@
 //	・フィールド
 //		- fee:int 料金フィールド
 //	・メソッド
-//		+ initFee():戻り値の型 void 
+//		+ initFee():戻り値の型 void
 //			・"今月の電話料金を初期化します（\\980）"を表示します
 //			・feeに980を代入します
-//		+ call():戻り値の型 void 
+//		+ call():戻り値の型 void
 //			・"電話をかけます（+\\150）"を表示します
 //			・feeに150を加算します
 //		+ feeフィールドのsetter,getter(ソースタブの機能を用いて定義する)
 //【Mainクラス】
 //	・メソッド
-//		+ main(args:String[]):戻り値の型 void 
+//		+ main(args:String[]):戻り値の型 void
 //			・Phoneオブジェクトを生成します
 //			・Phone#initFee()を呼び出します
 //			・Phone#call()を任意の回数、呼び出します
@@ -39,7 +39,19 @@ package day06.q01;
 class Main {
 
 	public static void main(String[] args) {
-		/*ここから記入*/
+		Phone phone = new Phone();
+
+		System.out.println("シェアード電話に加入しました");
+		phone.initFee();
+		phone.call();
+		phone.call();
+
+		phone.getFee();
+		System.out.println("今月の電話料金は" + phone.getFee() + "です");
+
+
+
+
 
 	}
 
