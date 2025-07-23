@@ -1,4 +1,4 @@
-//問題
+//問題 
 
 //パッケージ名 day7.q1
 //クラス名1 Drink.java 飲料水クラス
@@ -14,17 +14,17 @@
 //		- price:int
 //		- name:String
 //	・コンストラクタ（Eclipseの機能を用いて生成すること）
-//		+ Drink()
+//		+ Drink() 
 //			・price=120
 //			・name="ビタミン麦茶"
-//		+ Drink(price:int, name:String)
+//		+ Drink(price:int, name:String) 
 //			・フィールドname,priceに引数の値を代入する
 //	・メソッド
-//		+ show():戻り値の型 void
+//		+ show():戻り値の型 void 
 //			・飲料水情報としてフィールドの内容を表示します
 //【Mainクラス】
 //	・メソッド
-//		+ __main(args:String[]):戻り値の型 void
+//		+ __main(args:String[]):戻り値の型 void 
 //			・要素数3のDrink型の配列を宣言します（オブジェクトの配列はJavaテキスト下巻 Sample2006.javaにヒントがあります）
 //			・生成したDrinkオブジェクト（コンストラクタ引数：140,"リアル・コーラ"）を配列要素0番目に代入します
 //			・生成したDrinkオブジェクト（コンストラクタ引数：210,"ハイパードライ"）を配列要素1番目に代入します
@@ -37,22 +37,24 @@
 //ハイパードライ:210円です。
 //ビタミン麦茶:120円です。
 
-package day07.q01;
+package day07.q01.anser;
 
 class Main {
 
 	public static void main(String[] args) {
+
+		// Drink型配列
 		Drink[] drinks = new Drink[3];
-		drinks[0] = new Drink(140,"リアル・コーラ");
-		drinks[1] = new Drink(210,"ハイパードライ");
+		// 配列へのオブジェクトの代入
+		drinks[0] = new Drink(140, "リアル・コーラ");
+		drinks[1] = new Drink(210, "ハイパードライ");
 		drinks[2] = new Drink();
 
-		for(Drink drink : drinks) {
-			drink.show();
-
+		// 拡張for文でのオブジェクトの取得
+		for (Drink drink : drinks) {
+			drink.show();// メソッド呼び出し
 		}
 
 	}
-
 
 }

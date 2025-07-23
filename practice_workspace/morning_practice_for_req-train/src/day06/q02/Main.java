@@ -65,17 +65,24 @@ class Main {
 		Depositor depositor = new Depositor();
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("預金者情報を登録します。");
+		System.out.println("input name? >>" );
 		String name = reader.readLine();
+		System.out.println("input money? >>");
 		String money = reader.readLine();
+		System.out.println("銀行に預金者情報を登録します。");
 
 		 depositor.setName(name);
 		 int inmoney = Integer.parseInt(money);
 		 depositor.setMoney(inmoney);
 
-		System.out.println("預金者情報を登録します。");
-		System.out.println("input name? >>" + name );
-		System.out.println("input money? >>" + money );
-		System.out.println("銀行に預金者情報を登録します。");
+
+
+
+
+
+		bank.setDepositor(depositor);
+		bank.showData();
 
 
 
