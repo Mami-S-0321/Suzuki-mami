@@ -1,6 +1,6 @@
 package day08.q01;
 
-public class Magic {
+public class Magic{
 	private String name;
 
 	// 問題解答

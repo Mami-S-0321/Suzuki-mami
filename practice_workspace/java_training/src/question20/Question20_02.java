@@ -6,6 +6,9 @@ public class Question20_02 {
 
 		Question20_01 sports = new Question20_01();
 
+		sports.setHobby("サッカー");
+		System.out.println("趣味は" + sports.getHobby() + "です");
+
 	}
 
 }

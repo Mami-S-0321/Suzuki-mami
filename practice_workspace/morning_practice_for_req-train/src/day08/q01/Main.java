@@ -1,4 +1,4 @@
-//問題 
+//問題
 
 //パッケージ名 day8.q1
 //クラス名1 Magic.java 魔法使いクラス(実装済み。配布クラス)
@@ -14,10 +14,10 @@
 //	・フィールド
 //		- name:String
 //	・コンストラクタ
-//		+ Magic(name:String)  
+//		+ Magic(name:String)
 //			・フィールドnameに引数の値を代入する
 //	・メソッド
-//		+ attack(mp:int):戻り値の型 void 
+//		+ attack(mp:int):戻り値の型 void
 //			・(name + "の攻撃！！")と表示
 //			・乱数（0-mpの間）+10の数値のダメージを与える
 //【Sorcererクラス】
@@ -26,13 +26,13 @@
 //		+ Sorcerer(name:String)
 //			・super(name)を呼び出す
 //	・メソッド
-//		+ attack(mp:int):戻り値の型 void 
+//		+ attack(mp:int):戻り値の型 void
 //			→Magic#attack(mp:int)をオーバーライドする（Eclipseの機能を用いて生成してもよい）
 //			・super.attack(mp)を呼び出す
 // 			・(mp*0.5)した数値を追加ダメージとして与える
 //【Mainクラス】
 //	・メソッド
-//		+ __main(args:String[]):戻り値の型 void 
+//		+ __main(args:String[]):戻り値の型 void
 //			・MagicクラスとSorcererクラスを生成する。（コンストラクタ引数に任意の名前を与える。)
 //			・それぞれのオブジェクトのattackメソッドを呼び出す。（引数にmp:任意の整数を与える。）
 
@@ -44,6 +44,9 @@
 //追加で15のダメージを与えた。
 
 package day08.q01;
+
+import day08.q01.anser.Magic;
+import day08.q01.anser.Sorcerer;
 
 class Main {
 
@@ -57,6 +60,10 @@ class Main {
 		magic.attack(magicMp);
 
 		/*ここから記入*/
+		Magic sorcerer = new Sorcerer("魔導士");
+		int sorcererMp = 30;
+		sorcerer.attack(sorcererMp);
+
 
 	}
 

@@ -1,6 +1,6 @@
 package question20;
 
-public class Inheritance {
+public class Inheritance{
 	private String hobby;
 
 	 public void setHobby(String hobby) {
