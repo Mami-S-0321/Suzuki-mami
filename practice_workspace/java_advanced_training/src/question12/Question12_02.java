@@ -1,7 +1,7 @@
 package question12;
 
 public class Question12_02 {
-	int num;
+	private static int num;
 	private static void test() {
 	 num++;
 	 System.out.println(num);

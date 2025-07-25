@@ -6,9 +6,9 @@ public class Book {
 	 private int price;
 
 	 // 以下にフィールドを初期化するコンストラクタを作成
-	 public Book () {
-		 title = "生き物";
-		 price = 1200;
+	 public Book (String title,int price) {
+		 this.title = title;
+		 this.price = price;
 	 }
 
 

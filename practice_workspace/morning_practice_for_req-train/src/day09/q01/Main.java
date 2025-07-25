@@ -23,7 +23,7 @@
 //【Mainクラス】
 //※SampleMainを参考に人間とコンピュータとで対戦できるようにする
 //	・メソッド
-//		+ __main(args:String[]):戻り値の型 void 
+//		+ __main(args:String[]):戻り値の型 void
 //			・HumanPlayer型のオブジェクトを生成する。
 //			・ComPlayer型のオブジェクトを生成する。
 //			・二つのオブジェクトをJankenBattle.doBattle()の引数に設定する
@@ -46,8 +46,16 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		// ここに記述
+		HumanPlayer p1 = new HumanPlayer("suzuki");
+		ComPlayer cp1 = new ComPlayer();
 
+		Playable winner = JankenBattle.doBattle(p1, cp1);
+
+		if (winner == p1) {
+			System.out.println("人間の勝ち");
+		} else{
+			System.out.println("コンピュータの勝ち");
+		}
 	}
 
-}
+	}
