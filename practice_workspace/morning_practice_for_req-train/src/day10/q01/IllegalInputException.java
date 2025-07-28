@@ -7,12 +7,13 @@
 
 package day10.q01;
 
-public class IllegalInputException  {
+public class IllegalInputException extends Exception {
 	public IllegalInputException(){
 
 	}
     public IllegalInputException(String message){
-		super message;
+		super(message);
+
 	}
 
 }

@@ -1,7 +1,7 @@
 package day10.q01;
-
+// アカウント情報をまとめてるクラス
 public class Account {
-
+//フィールドには初期値が入ってる状態
 	private String name = "suzuki";
 	private int pin = 1234;
 	private int balance = 2000000;

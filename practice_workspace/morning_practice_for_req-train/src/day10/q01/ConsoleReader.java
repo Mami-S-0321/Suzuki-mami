@@ -23,11 +23,10 @@ public class ConsoleReader {
 		String inputString = br.readLine();
 
 		/* ここに記述 */
-		if{
-			//[4桁の数字以外の入力値の場合]
+		if(!inputString.matches("[0-9]{4}")){
+			throw new IllegalInputException("不正な入力:" + inputString);
 		}
-        throw new IllegalInputException("不正な入力:" + inputString)
-//			ヒント：条件は正規表現をつかって記述すること（P135参照）
+
 		/* 記述終了 */
 
 		pin = Integer.parseInt(inputString);

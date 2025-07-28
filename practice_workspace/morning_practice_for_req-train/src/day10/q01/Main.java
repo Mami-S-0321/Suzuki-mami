@@ -27,7 +27,7 @@
 //			ヒント：条件は正規表現をつかって記述すること（P135参照）
 //【Mainクラス】
 //	・メソッド
-//		+ __main(args:String[]):戻り値の型 void 
+//		+ __main(args:String[]):戻り値の型 void
 //			・Account型のオブジェクトを生成する。
 //			・ConsoleReader型のオブジェクトを生成する。
 //			・暗証番号入力用の変数を宣言。
@@ -62,8 +62,32 @@
 
 package day10.q01;
 
-public class Main {
+import java.io.IOException;
 
-	// ここから追記してください
+public class Main {
+	public static void main(String[] args) {
+		Account account = new Account();
+		ConsoleReader consoleReader = new ConsoleReader();
+		int pass;
+
+		try {
+			pass = consoleReader.inputPIN();
+			if(account.getPin()== pass) {
+				System.out.println("認証しました");
+
+				account.showAccount();
+			}else {
+				System.out.println("暗証番号が違います");
+			}
+		}
+		catch(IOException | IllegalInputException e){
+			e.printStackTrace();
+		}
+
+
+
+	}
+
+
 
 }
