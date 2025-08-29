@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Spring 練習問題 基礎編 Practice7-02</h1>
+
+データベース操作(外部参照) 外部キーによる条件検索
+<hr>
+<p>
+<h4>果物と産地の情報 検索したい地域を選んでください。</h4>
+<form action="/fruits/select/area/result" method="get">
+<table>
+<tr>
+<td>地域名</td>
+<td><select name="areaId">
+<option value="1">北海道</option>
+<option value="2">北奥羽</option>
+<option value="3">南奥羽</option>
+<option value="4">北関東</option>
+<option value="5">南関東</option>
+<option value="6">甲信越</option>
+<option value="7">北陸</option>
+<option value="8">東海</option>
+<option value="9">近畿北部</option>
+<option value="10">近畿中部</option>
+<option value="11">近畿南部</option>
+<option value="12">山陰</option>
+<option value="13">山陽</option>
+<option value="14">四国</option>
+<option value="15">北九州</option>
+<option value="16">南九州</option>
+<option value="17">沖縄</option>
+<option value="18">国外</option>
+</select></td>
+</tr>
+</table>
+<input type="submit" value="検索"/>
+</form>
+</p>
+</body>
+</html>

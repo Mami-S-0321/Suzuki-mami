@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+	width: 700px;
+	height: 700px;
+}
+/*ヘッダー*/
+header{
+	background-color: #FFDF98;
+	width: 700px;
+	height: 300px;
+	font-size: 42px;
+}
+
+div{
+	display: flex;
+}
+
+main{
+	background-color: #FFEBCD;
+	width: 500px;
+	height: 305px;
+
+
+}
+
+section{
+	background-color: #EFEADC;
+	width: 200px;
+	height: 305px;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+footer{
+	background-color: #DCDCDC;
+	width: 700px;
+	height: 50px;
+}

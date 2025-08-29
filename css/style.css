@@ -1,0 +1,147 @@
+@charset "UTF-8"; 
+/* 共通部分*/
+html{
+	font-size: 100%;
+	
+}
+body{
+	background-size: cover;
+	background-image: url(../images/背景画像1.jpg);
+}
+
+/* レイアウト */
+
+
+/* 見出し */
+.heading-large{
+	font-size: 3rem;
+	text-align: center;
+}
+
+.heading-large{
+	margin-bottom: 1rem;
+	font-family: serif;
+}
+.about{
+	max-width: 736px;
+	padding: 0 1.5rem;
+	margin:3rem auto 0;
+}
+.about p{
+	margin-bottom: 3rem;
+}
+
+/* ヘッダー*/
+.page-header{
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2%;
+	background-color: rgb(240, 245, 135);
+}
+
+.main-nav{
+	display: flex;
+	gap: 15rem;
+	list-style: none;
+	font-family: cursive;
+	
+	
+}
+.main-nav a{
+	color: #432;
+}
+
+/* ヘッダーカバー画像*/
+
+
+
+/* HOME*/
+.cover{
+	background-size: cover;
+	background-position: center bottom;
+	height: 100px;
+}
+.Achievement{
+	display: grid;
+	gap: 2rem 1.5rem;
+	grid-template-columns: repeat(2,1fr);
+	text-align: center;
+}
+
+/* フッター*/
+.info{
+	width: 100%;
+	max-width: 544px;
+	margin:auto;
+	padding: 0 1.5rem;
+	border-spacing: 0;
+}
+.info th,
+.info td{
+	border-bottom: 1px solid #c9c2bc;
+}
+.info th{
+	text-align: left;
+	font-weight: normal;
+	padding: 1rem;
+}
+.info td{
+	padding: 1rem 0;
+}
+.copyright{
+	background-color: rgb(240, 245, 135);
+	text-align: center;
+	padding: 2rem 0;
+	margin-top:6rem;
+	color: rgb(0, 64, 128);
+}
+.book{
+	display: grid;
+	width: 100px;
+	height: 100px;
+	margin-left: 50%;
+	padding: 2rem 10;
+	margin-top:1rem;
+	
+}
+
+/* デスクトップ版*/
+@media (min-width: 800px) {
+    /* 見出し */
+.heading-large{
+	font-size: 4rem;
+}
+
+    /* ヘッダー */
+    .page-header{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1.5rem;
+	}
+    .main-nav{
+		font-size: 2rem;
+		font-family: cursive;
+		
+	}
+
+
+    /* HOME */
+
+	.about{
+		margin:6rem auto 0;
+	}
+
+
+    /* フッター */
+    .page-footer{
+		padding-top: 12rem;
+	}
+	.info th{
+		padding-left: 2.5rem;
+	}
+ 
+
+span.githubpages {  
+color: #FF0000; 
+font-weight: bold;
+}
